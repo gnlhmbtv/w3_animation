@@ -1,0 +1,47 @@
+div {
+    width: 100px;
+    height: 80px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+  p{
+      padding: 30px;
+      color: white;
+      font-weight: bold;
+      font-size: 25px;
+  }
+@keyframes example{
+    0%
+    {
+        background-color: brown;
+        left: 0;
+        transform: rotate(20deg);
+    }
+    25%
+    {
+        background-color: forestgreen;
+        left: 0;
+        transform: rotate(25deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+        background-color: coral;
+        left: 400px;
+    }
+    75%
+    {
+        transform: rotate(0deg);
+        background-color: darkcyan;
+        left: 400px;
+    }
+    100% 
+    {        
+        transform: rotate(360deg);
+        background-color: cornflowerblue;
+        left: 0;
+    }
+}
